@@ -19,3 +19,136 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+svg {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 15px 131px;
+    margin: auto;
+}
+
+/* Header */
+.header {}
+
+.header .container {
+    padding: 15px 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .header_menu_item ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.header .header_menu_item ul li a {
+    color: var(--text);
+}
+
+.header .other_item ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+/* Footer */
+.footer {}
+
+.grid_cols_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.col_item {}
+
+.col_title {
+    margin-bottom: 53px;
+}
+
+.col_title h3 {
+    line-height: 48px;
+    font-weight: 500;
+    color: #9F9F9F;
+}
+
+.col_title h1 {}
+
+.col_content {}
+
+.col_content p {
+    color: #9F9F9F;
+    width: 285px;
+}
+
+.col_content_text {}
+
+.col_content_link {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.col_content_link li a {
+    color: var(--text);
+}
+
+form,
+.form_get_newsletter {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.form_get_newsletter button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: var(--background);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+
+.form_get_newsletter input {
+    font-size: 14px;
+    background-color: var(--background);
+    padding-bottom: 8px;
+}
+
+.border {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
