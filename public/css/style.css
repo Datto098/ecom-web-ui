@@ -760,6 +760,58 @@ form,
   display: flex;
 }
 
+.comparison-content {
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.comparison-content__list {
+  border-top: 1px solid #9f9f9f;
+}
+
+.comparison-content__item {
+  padding-top: 30px;
+}
+.comparison-content__item h4 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.comparison-content__item div {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.comparison-content__item div h5 {
+  margin-right: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  width: 25%;
+}
+.comparison-content__item div span {
+  margin-right: 30px;
+  display: block;
+  width: 25%;
+}
+
+.comparison-content__btn {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.comparison-content__btn a {
+  width: calc(50% - 50px);
+  padding: 20px 0;
+  background-color: var(--primary);
+  color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* css blog*/
 .blog-main {
   display: flex;
