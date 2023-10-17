@@ -1,0 +1,111 @@
+/**
+    TODO: BUTTON COMPONENT
+        <button class="primary largest">Button</button>
+        <button class="primary">Button</button>
+        <button class="outline">Button</button>
+        <button class="square active">1</button>
+        <button class="square">2</button>
+        <button class="square">3</button>
+        <button class="square">4</button>
+        <button class="square">Next</button>
+        <button class="square">Previous</button>
+*/
+
+
+button {
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+button.primary {
+    color: #fff;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+}
+
+button.primary::before {
+    z-index: -1;
+    transition: all 0.3s ease;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary);
+    color: #fff;
+}
+
+button.primary:hover {
+    color: var(--primary);
+}
+
+button.primary:hover::before {
+    transform: translateX(110%);
+}
+
+button.largest {
+    padding: 25px 54px;
+}
+
+button.outline {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+}
+
+button.outline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    transform: translateX(110%);
+    transition: all 0.3s ease;
+}
+
+button.outline:hover::before {
+    background-color: var(--primary);
+    transform: translateX(0%);
+    transition: all 0.3s ease;
+}
+
+button.outline:hover {
+    color: #fff;
+}
+
+button.square {
+    min-width: 52px;
+    min-height: 52px;
+    padding: 0;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #fff;
+    color: var(--primary);
+    transition: all 0.3s ease;
+    border: 1px solid var(--primary);
+}
+
+button.square:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+button.square.active {
+    background: var(--primary);
+    color: #fff;
+}
